@@ -1,0 +1,109 @@
+.container {
+  max-width: 960px;
+}
+
+input {
+  border-color: initial;
+}
+
+input.invalidInput {
+  border-color: red;
+}
+
+input.validInput {
+  border-color: green;
+}
+
+
+
+.formControl{
+  position: relative;
+}
+
+.input-icon-email{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 95%;
+  top: 73.5%;
+  transform: translateY(-50%);
+  fill: rgb(0, 0, 0);
+}
+
+
+.input-icon-valid {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 90%;
+  top: 50%;
+  transform: translateY(-50%);
+   fill: green;
+}
+
+.input-icon-invalid {
+  color: red;
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   left: 90%;
+   top: 50%;
+   transform: translateY(-50%);
+   fill:red;
+}
+
+/* email */
+.input-icon-email-valid{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 95%;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: green;
+}
+
+.input-icon-email-invalid{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 95%;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: red;
+}
+
+.icon-terms{
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.3%;
+}
+
+.icon-invalid-terms{
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.3%;
+}
+
+.icon-valid-terms{
+  color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.3%;
+}
+
+/* show icons */
+.showValid {
+  display: none;
+}
+
+/* alerts */
+
+.alerts {
+  display: none;
+}

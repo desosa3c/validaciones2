@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Registro v2</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+  <div class="container">
+    <!-- alerts -->
+    <div class="alerts p-3">
+      <div class="alert alert-danger d-flex justify-content-center showAlert" id="errorAlert" role="alert">
+        <p>Por favor completa los campos faltantes</p>
+      </div>
+
+      <div class="alert alert-success d-flex justify-content-center showAlert" id="successAlert" role="alert">
+        <p>Gracias por registrarte!</p>
+      </div>
+    </div>
+
+    <main>
+      <form action="#" method="get" class="row mt-4">
+        <div class="col">
+          <h1 class="mb-3">Registro</h1>
+          <hr class="my-4">
+          <div class="row g-3">
+            <div class="col-sm-6 inputWrap">
+              <label for="nombre" class="form-label">Nombre</label>
+              <div class="formControl"><input type="text" class="form-control" id="nombre">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="svgIconInput"
+                  class="showValid">
+                  <path
+                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
+                  </path>
+                  <path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path>
+                </svg>
+              </div>
+
+            </div>
+
+            <div class="col-sm-6 inputWrap">
+              <label for="apellido" class="form-label">Apellido</label>
+              <div class="formControl"><input type="text" class="form-control" id="apellido">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  id="svgIconInputApellido" class="showValid">
+                  <path
+                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
+                  </path>
+                  <path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path>
+                </svg>
+              </div>
+
+
+            </div>
+
+            <div class="col-12 inputWrap">
+              <label for="email" class="form-label">Email</label>
+              <div class="formControl">
+                <input type="email" class="form-control" id="email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  id="svgIconInputEmail" class="showValid">
+                  <path
+                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
+                  </path>
+                  <path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path>
+                </svg>
+              </div>
+
+
+            </div>
+
+            <div class="col-sm-6 inputWrap">
+              <label for="password1" class="form-label">Contraseña</label>
+              <div class="formControl">
+                <input type="password" class="form-control" id="password1" minlength="6"
+                  placeholder="minimo 6 caracteres">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="svgIconInputPass"
+                  class="showValid">
+                  <path
+                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
+                  </path>
+                  <path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path>
+                </svg>
+
+              </div>
+
+            </div>
+
+            <div class="col-sm-6 inputWrap">
+              <label for="password2" class="form-label">Repetir contraseña</label>
+              <div class="formControl">
+                <input type="password" class="form-control" id="password2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  id="svgIconInputPass2" class="showValid">
+                  <path
+                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
+                  </path>
+                  <path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path>
+                </svg>
+              </div>
+
+            </div>
+
+            <div class="col-sm-12 d-flex justify-content-start">
+              <button type="button" class="btn btn-link ps-0" data-bs-toggle="modal"
+                data-bs-target="#modalTerminos">Términos del servicio</button>
+              <i class='bx bx-check-circle icon-terms' id="iconoTerminos"></i>
+            </div>
+
+
+            <button class="btn btn-primary" type="submit">Registrarme</button>
+
+
+          </div>
+        </div>
+      </form>
+
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a
+          Programar</a></p>
+      <p class="mb-1">Es un sitio generado con fines estrictamente educativos. No realiza registros ni guarda datos de
+        ningún tipo.</p>
+    </footer>
+  </div>
+
+  <div class="modal fade" id="modalTerminos" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Términos y condiciones del servicio.</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quasi sapiente voluptatum deserunt?
+            Deleniti, adipisci vitae in quaerat eius nemo optio? Quas at magni saepe cumque. Delectus perspiciatis omnis
+            accusamus.</p>
+        </div>
+        <div class="modal-footer">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkTerminos">
+            <label class="form-check-label" for="checkTerminos">Acepto los términos y condiciones del servicio.</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/validacion.js"></script>
+</body>
+
+</html>
